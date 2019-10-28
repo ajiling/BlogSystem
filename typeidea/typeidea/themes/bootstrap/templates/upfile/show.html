@@ -1,0 +1,19 @@
+{% load static %}
+{% load cache %}
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>文件</title>
+      <link rel="stylesheet" href="{% static 'css/href_css.css' %}">
+  </head>
+  <body>
+     <div class="demo multipleBg">文件列表
+     <ul>
+         {% for list in title_list%}
+         <li> <a href="{{MEDIA_URL}}{{list.files}}" align="right">{{list.title}}</a></li>
+         {% endfor %}
+     </ul>
+     </div>
+  </body>
+</html>

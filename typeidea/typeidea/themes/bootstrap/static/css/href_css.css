@@ -1,0 +1,44 @@
+body { background: #F0EADA; }
+.demo {
+    width: 1400px;
+    height: 1800px;
+    border: 20px solid rgba(104, 104, 142,0.5);
+    border-radius: 10px;
+    padding: 30px 30px;
+    color: #f36;
+    font-size: 80px;
+    font-family:"隶书";
+    line-height: 1.5;
+}
+.multipleBg {
+    background: url("images/bg-tl.png") no-repeat left top, url("images/bg-tr.png") no-repeat right top, url("images/bg-bl.png") no-repeat left bottom, url("images/bg-br.png") no-repeat right bottom, url("images/bg-repeat.png") repeat left top;
+    /*改变背景图片的position起始点，四朵花都是border边缘处起，而平铺背景是在paddin内边缘起*/
+    -webkit-background-origin: border-box, border-box, border-box, border-box, padding-box;
+    -moz-background-origin: border-box, border-box, border-box, border-box, padding-box;
+    -o-background-origin: border-box, border-box, border-box, border-box, padding-box;
+    background-origin: border-box, border-box, border-box, border-box, padding-box;
+    /*控制背景图片的显示区域，所有背景图片超边border外边缘都将被剪切掉*/
+    -moz-background-clip: border-box;
+    -webkit-background-clip: border-box;
+    -o-background-clip: border-box;
+    background-clip: border-box;
+}
+ul {/* 列表基本样式 */
+    list-style-type:circle; 									/* 空心圆符号*/
+    list-style-position:inside; 								/* 显示在里面 */
+    list-style-image:url(images/button1.gif); 				/* 自定义列表项目符号 */
+}
+
+li {
+    font-size: medium;
+}
+a {/* 超链接的默认样式 */
+    text-decoration:none;
+    font-size: medium;
+
+    /* 清除下划线效果 */
+}
+a:hover {/* 鼠标经过时样式 */
+    font-size:1.6em; 										/* 放大字体1.6倍显示 */
+}
+		/* 白色字体 */
