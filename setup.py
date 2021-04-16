@@ -12,10 +12,10 @@ setup(
     license='MIT',
     packages=find_packages('typeidea'),
     package_dir={'': 'typeidea'},
-    # package_data={'': [    # ´ò°üÊı¾İÎÄ¼ş£¬·½·¨Ò»
-        # 'themes/*/*/*/*',  # ĞèÒª°´Ä¿Â¼²ã¼¶Æ¥Åä
+    # package_data={'': [    # æ‰“åŒ…æ•°æ®æ–‡ä»¶ï¼Œæ–¹æ³•ä¸€
+        # 'themes/*/*/*/*',  # éœ€è¦æŒ‰ç›®å½•å±‚çº§åŒ¹é…
     # ]},
-    include_package_data=True,  # ·½·¨¶ş ÅäºÏ MANIFEST.inÎÄ¼ş
+    include_package_data=True,  # æ–¹æ³•äºŒ é…åˆ MANIFEST.inæ–‡ä»¶
     install_requires=[
         'django~=2.0',
         'gunicorn==19.8.1',
@@ -32,7 +32,7 @@ setup(
         'django-redis==4.8.0',
         'hiredis==0.2.0',
         # debug
-        'django-debug-toolbar==1.9.1',
+        'django-debug-toolbar==1.11.1',
         'django-silk==2.0.0',
     ],
     scripts=[
