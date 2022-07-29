@@ -12,10 +12,10 @@ setup(
     license='MIT',
     packages=find_packages('typeidea'),
     package_dir={'': 'typeidea'},
-    # package_data={'': [    # ´ò°üÊı¾İÎÄ¼ş£¬·½·¨Ò»
-        # 'themes/*/*/*/*',  # ĞèÒª°´Ä¿Â¼²ã¼¶Æ¥Åä
+    # package_data={'': [    # æ‰“åŒ…æ•°æ®æ–‡ä»¶ï¼Œæ–¹æ³•ä¸€
+        # 'themes/*/*/*/*',  # éœ€è¦æŒ‰ç›®å½•å±‚çº§åŒ¹é…
     # ]},
-    include_package_data=True,  # ·½·¨¶ş ÅäºÏ MANIFEST.inÎÄ¼ş
+    include_package_data=True,  # æ–¹æ³•äºŒ é…åˆ MANIFEST.inæ–‡ä»¶
     install_requires=[
         'django~=2.0',
         'gunicorn==19.8.1',
@@ -26,7 +26,7 @@ setup(
         'django-rest-framework==0.1.0',
         'django-redis==4.8.0',
         'django-autocomplete-light==3.2.10',
-        'mistune==0.8.3',
+        'mistune==2.0.3',
         'Pillow==4.3.0',
         'coreapi==2.3.3',
         'django-redis==4.8.0',
